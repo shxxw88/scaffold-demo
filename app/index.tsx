@@ -9,7 +9,7 @@ export default function Index() {
 
   useEffect(() => {
     if (initializing) return;
-    router.replace(session ? "/eligibility-info" : "/sign-in");
+      router.replace("/(tabs)");
   }, [initializing, session, router]);
 
   return (

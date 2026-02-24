@@ -46,29 +46,29 @@ interface ProfileContextType {
 }
 
 const defaultProfileData: ProfileData = {
-  name: "",
+  name: "Talia Redsky",
   dateOfBirth: "",
-  gender: "",
-  phone: "",
-  email: "",
-  address: "",
+  gender: "Female",
+  phone: "(205) 923-2406",
+  email: "talia_redsky@gmail.com",
+  address: "Williams Lake",
   postalCode: "",
-  province: "",
-  citizenshipStatus: "",
+  province: "British Columbia",
+  citizenshipStatus: "Indigenous Canadian",
   householdSize: "",
   familyComposition: "",
   annualFamilyNetIncome: "",
   guardianName: "",
   guardianPhone: "",
   guardianEmail: "",
-  highestEducation: "",
-  highSchoolName: "",
-  graduationDate: "",
-  tradeSchoolName: "",
-  tradeProgramName: "",
-  tradeGraduationDate: "",
-  trade: "",
-  apprenticeshipLevel: "",
+  highestEducation: "High School Diploma",
+  highSchoolName: "Columneetza Secondary School",
+  graduationDate: "2015-06-01",
+  tradeSchoolName: "Trowel Trades Training Association",
+  tradeProgramName: "Masonry Foundation Program",
+  tradeGraduationDate: "2025-06-01",
+  trade: "Masonry",
+  apprenticeshipLevel: "Level 1",
   profileImageUri: "",
 };
 
@@ -85,18 +85,7 @@ export function ProfileProvider({ children }: { children: ReactNode }) {
   }, []);
 
   const loadProfileData = async () => {
-    try {
-      const storedData = await AsyncStorage.getItem(STORAGE_KEY);
-      if (storedData) {
-        const parsedData = JSON.parse(storedData);
-        // Keep the default shape but hydrate with anything we previously saved.
-        setProfileData({ ...defaultProfileData, ...parsedData });
-      }
-    } catch (error) {
-      console.error("Error loading profile data:", error);
-    } finally {
-      setIsLoading(false);
-    }
+     setIsLoading(false);  //skip loading
   };
 
   const saveProfileData = async (data: ProfileData) => {

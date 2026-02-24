@@ -35,24 +35,17 @@ type AuthContextValue = {
 const AuthContext = createContext<AuthContextValue | undefined>(undefined);
 const SESSION_STORAGE_KEY = "@auth_session";
 
+const DEMO_SESSION = { user: { id: "demo", email: "demo@scaffold.app" } };
+
+
 export function AuthProvider({ children }: { children: ReactNode }) {
-  const [session, setSession] = useState<{ user: SimpleUser } | null>(null);
+  const [session, setSession] = useState<{ user: SimpleUser } | null>(DEMO_SESSION);
   const [initializing, setInitializing] = useState(true);
   const [authLoading, setAuthLoading] = useState(false);
 
   useEffect(() => {
     const loadSession = async () => {
-      try {
-        const storedSession = await AsyncStorage.getItem(SESSION_STORAGE_KEY);
-        if (storedSession) {
-          const parsedSession = JSON.parse(storedSession);
-          setSession(parsedSession);
-        }
-      } catch (error) {
-        console.warn("Unable to load session", error);
-      } finally {
-        setInitializing(false);
-      }
+      setInitializing(false); // just skip straight to done
     };
 
     loadSession();
