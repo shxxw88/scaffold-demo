@@ -47,3 +47,4 @@ app-example
 
 api/
 .env
+.vercel
