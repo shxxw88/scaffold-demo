@@ -18,7 +18,7 @@ profile so reviewers and judges can experience the full flow without needing to 
 an account or configure a backend.
 
 If you're here from the portfolio or the showcase — you can try the live demo at 
-[tryscaffold.ca](https://www.tryscaffold.ca/).
+[Scaffold Demo]((https://scaffold-theta.vercel.app/).
 
 ---
 
@@ -118,5 +118,5 @@ Scaffold was built by a seven-person BCIT team as part of the D3/FSWD x ConnectH
 
 ## Links
 
-- 🌐 Live demo: [tryscaffold.ca](https://www.tryscaffold.ca/)
+- 🌐 Live demo: [Scaffold Demo]((https://scaffold-theta.vercel.app/)
 - 📸 Instagram: [@tryscaffold](https://www.instagram.com/tryscaffold/?hl=en)
