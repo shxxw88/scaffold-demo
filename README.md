@@ -18,7 +18,7 @@ profile so reviewers and judges can experience the full flow without needing to 
 an account or configure a backend.
 
 If you're here from the portfolio or the showcase — you can try the live demo at 
-[Scaffold Demo]((https://scaffold-theta.vercel.app/).
+[scaffold-theta.vercel.app](https://scaffold-theta.vercel.app/).
 
 ---
 
@@ -112,11 +112,11 @@ assets/       — logos, illustrations
 
 ## Team
 
-Scaffold was built by a seven-person BCIT team as part of the D3/FSWD x ConnectHer Technology Innovation Showcase.
+Scaffold was built by a four-person BCIT team as part of the D3 Innovation Showcase.
 
 ---
 
 ## Links
 
-- 🌐 Live demo: [Scaffold Demo]((https://scaffold-theta.vercel.app/)
+- 🌐 Live demo: [scaffold-theta.vercel.app](https://scaffold-theta.vercel.app/)
 - 📸 Instagram: [@tryscaffold](https://www.instagram.com/tryscaffold/?hl=en)
